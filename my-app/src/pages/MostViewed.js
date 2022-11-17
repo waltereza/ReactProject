@@ -1,0 +1,24 @@
+import React from "react";
+import Feed from "../components/Feed";
+
+export default function MostViewed () {
+    const posts =[
+        {
+         id: Math.random(),
+         content: 'content',
+         userName: 'Walter',
+         publishedAt: new Date(),
+        },   
+    ];
+    
+    return (
+    <main class="most-viewed">
+        <Feed 
+        posts = {posts} 
+        title="Mais vistos"
+        subtitle="Acompanhe os assuntos mais comentados no momento
+        e fique por dentro de qualquer novidade"
+        />
+    </main>
+    );
+}
